@@ -2,40 +2,34 @@
 
 [открыть сайт](https://rodionpushkin.github.io/absolut/)
 
-This template should help get you started developing with Vue 3 in Vite.
+Проект грузит тудушки из jsonplaceholder и отрисовывает их с использованием пагинации, выполнено на vue3, pinia, ts, tailwind
 
-## Recommended IDE Setup
+## Техническое задание
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+```sh
+Из произвольной Json коллекции (100 записей) сделать пейджинг, на странице показывать 10 записей.
 
-## Type Support for `.vue` Imports in TS
+На странице должны быть ссылки с номерами 3-х страниц, ссылка на первую и последнюю страницу.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Страница должна адаптироваться - десктоп, планшет, телефон.
 
-## Customize configuration
+Если это возможно, по переходу на страницы менять параметр в url.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Желательно, кол-во ссылок и количество записей на странице должно устанавливается в конфигурации.
 
-## Project Setup
+Реализовать на Vue.js.
+
+Результат прислать ссылкой на git (github, gitlab, bibucket, etc., не имеет значение).
+```
+
+## Загрузка пакетов
 
 ```sh
 yarn
 ```
 
-### Compile and Hot-Reload for Development
+### Запуск в режиме разработки
 
 ```sh
-yarn dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-yarn build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
+yarn dev --host
 ```
